@@ -18,8 +18,8 @@ void lcd_send(uint8_t rs, char data) {
     uint8_t data_t[4];
     
     // Set the data bytes for enabling and disabling the TS and RS pins
-    data_t[0] = data;       //ts=1, rs=0 or 1
-    data_t[1] = data|0x04;  //ts=0, rs=0 or 1
+    data_t[0] = data;       //ts=1, rs=0 
+    data_t[1] = data|0x04;  //ts=0, rs=0 
     data_t[2] = data|0x06;  //ts=0, rs=1
     data_t[3] = data|0x02;  //ts=1, rs=1
 
