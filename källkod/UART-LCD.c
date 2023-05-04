@@ -46,7 +46,7 @@ void lcd_send(uint8_t rs, char data) {
 // This function clears the LCD display
 void lcd_clear (void)
 {
-    lcd_send (0, 0x80);  //send clear cmd
+    lcd_send (0, 0x01);  //send clear cmd
     
     Delay_ms(2); // delay 2 ms
 }
