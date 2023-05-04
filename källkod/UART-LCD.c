@@ -66,7 +66,6 @@ void lcd_put_cur(int row, int col)
     lcd_send(0,col);
 }
 
-
 void lcd_init (void)
 {
 	// 4 bit initialisation
