@@ -48,7 +48,7 @@ void lcd_clear (void)
 {
     lcd_send (0, 0x80);  //send clear cmd
     
-    delay_ms(2); // delay 2 ms
+    Delay_ms(2); // delay 2 ms
 }
 
 // This function sets the LCD cursor position
