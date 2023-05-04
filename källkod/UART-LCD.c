@@ -84,8 +84,7 @@ void lcd_init (void)
 	Delay_ms(1);
 	lcd_send (0, 0x08); //Display on/off control --> D=0,C=0, B=0  ---> display off
 	Delay_ms(1);
-	lcd_send (0, 0x01);  // clear display
-	Delay_ms(1);
+	lcd_clear(); // clear LCD screen
 	lcd_send (0, 0x06); //Entry mode set --> I/D = 1 (increment cursor) & S = 0 (no shift)
 	Delay_ms(1);
 	lcd_send (0, 0x0C); //Display on/off control --> D = 1, C and B = 0. (Cursor and blink, last two bits)
