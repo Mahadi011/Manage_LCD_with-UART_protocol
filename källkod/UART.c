@@ -24,6 +24,7 @@ void UART_Config(void)
    or motors. Enabling the GPIOA clock allows us to configure the pins as 
    inputs or outputs and use them for our application.
     */
+   
    // Enable USART2 clock and GPIOA clock
    RCC-> APB1ENR |= 0x20000; // Enable USART2 clock
    RCC-> AHB1ENR |=0x00001;  // Enable GPIOA clock
